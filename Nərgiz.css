@@ -1,0 +1,115 @@
+/* Ümumi tərtibat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Başlıq */
+header {
+    background: linear-gradient(135deg, #ff4d4d 40%, #cc3333);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    opacity: 0.9;
+}
+
+/* Əsas Bölmə */
+.favorite-things {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.item {
+    width: 30%;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0.95;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 85, 85, 0.7);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    filter: brightness(0.8);
+    transition: filter 0.4s ease;
+}
+
+.item img:hover {
+    filter: brightness(1);
+}
+
+.item h2 {
+    color: #ff6666; 
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.item em {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+    color: #b3b3b3;
+    font-size: 1em;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #cc3333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer .lucky-number {
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #1c1c1c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 85, 85, 0.7);
+}
